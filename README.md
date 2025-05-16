@@ -1,4 +1,4 @@
-## Running the Tests
+## Running the Games
 
 - Clone the repo
 - Create and source venv, e.g. `uv venv .venv && source .venv/bin/activate`
