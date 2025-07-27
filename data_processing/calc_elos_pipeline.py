@@ -24,9 +24,9 @@ import numpy as np
 from scipy.optimize import root_scalar
 
 # Constants for input log directories
-ENGINE_AGGR_FOLDER   = Path("_logs/misc/dragon")
-DRAGON_VS_LLM_FOLDER = Path("_logs/dragon_vs_llm")
-REFINED_CSV_PATH    = Path("data_processing/refined.csv")
+ENGINE_AGGR_FOLDER   = Path("data_processing/elo_inputs/dragon")
+DRAGON_VS_LLM_FOLDER = Path("data_processing/elo_inputs/dragon_vs_llm")
+REFINED_CSV_PATH    = Path("data_processing/elo_inputs/refined.csv")
 MIN_GAMES = 30
 
 # Alias mapping: canonical model names -> list of folder variants

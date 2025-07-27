@@ -84,7 +84,11 @@ Notes:
     - E.g. if you use Linux/WSL, extract the contents of Komodo engine archive, copy '<extracted_folder>/Linux/dragon-linux' executable to the same folder as LLM Chess, update `llm_chess.dragon_path` to `./dragon-linux`
   - Stockfish: A powerful engine requiring separate installation.
     - You need to install Stockfish (e.g. `brew install stockfish`)
-    - Make sure correct path is set in `llm_chess.stockfish_path` (the default one assumes Brew installation on macOS - "/opt/homebrew/bin/stockfish") 
+    - Make sure correct path is set in `llm_chess.stockfish_path` (the default one assumes Brew installation on macOS - "/opt/homebrew/bin/stockfish")
+
+## Elo Calculation
+
+Komodo Dragon is assumed as Elo rated player (given the pool of players at chess.com). We use games against Dragon engine as a proxy to estimate Elo rating of LLMs should they play against chess.com users. You can run `data_processing/calc_elos_pipeline.py` to get Elo for LLMs. The script uses game logs that we've collected during game simulations, for simplicity they have been put under `data_processing/elo_inputs`
 
 
 ## Sample Dialog Happening within a Single Move
