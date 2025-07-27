@@ -9,6 +9,18 @@
   - By default Random (as White) plays vs LLM (as black, hence using `MODEL_KIND_B` from `.env`)
   - 42 games
 
+  ### Supported Model Providers
+
+The following AG2 API providers can be used, please check `.env.sample` and create `.env` with your API key
+
+  - Azure OpenAI
+  - OpenAI
+  - Google Gemini
+  - Anthropic Claude
+  - x.ai/Grok
+  - Local/Self-hosted models (OpenAI-compatible API)
+    - ollama and LM Studio can be used to host OpenAI compatible endpoint on `localhost` - you can run LLM Chess using any llama.cpp/gguf model
+
 ## Default Rules
 
 - Random players plays as white, LLM as black
@@ -69,6 +81,7 @@ Notes:
   - Komodo Dragon: chess.com Elo rated (Skill 1 - Elo 250, Skill 2 - Elo 400 etc.)
     - Binaries must be downloaded from [https://komodochess.com](https://komodochess.com/installation.htm) and extracted
     - Make sure you set the right path in `llm_chess.dragon_path`
+    - E.g. if you use Linux/WSL, extract the contents of Komodo engine archive, copy '<extracted_folder>/Linux/dragon-linux' executable to the same folder as LLM Chess, update `llm_chess.dragon_path` to `./dragon-linux`
   - Stockfish: A powerful engine requiring separate installation.
     - You need to install Stockfish (e.g. `brew install stockfish`)
     - Make sure correct path is set in `llm_chess.stockfish_path` (the default one assumes Brew installation on macOS - "/opt/homebrew/bin/stockfish") 
