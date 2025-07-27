@@ -9,7 +9,7 @@
   - By default Random (as White) plays vs LLM (as black, hence using `MODEL_KIND_B` from `.env`)
   - 42 games
 
-  ### Supported Model Providers
+### Supported Model Providers
 
 The following AG2 API providers can be used, please check `.env.sample` and create `.env` with your API key
 
