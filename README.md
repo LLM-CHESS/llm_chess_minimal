@@ -67,7 +67,7 @@ Notes:
 - Proxy Agent (custom AutoReplyAgent) is used to kick off conversation with a player agent and provides a list of available actions (get_current_board, get_legal_moves, make_move)
 - Chess Engine Players:
   - Komodo Dragon: chess.com Elo rated (Skill 1 - Elo 250, Skill 2 - Elo 400 etc.)
-    - Binaries downloaded from https://komodochess.com are supplied in the `dragon/` folder
+    - Binaries must be downloaded from [https://komodochess.com](https://komodochess.com/installation.htm) and extracted
     - Make sure you set the right path in `llm_chess.dragon_path`
   - Stockfish: A powerful engine requiring separate installation.
     - You need to install Stockfish (e.g. `brew install stockfish`)
